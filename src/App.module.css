@@ -1,0 +1,61 @@
+.appContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #10131a 0%, #304263 100%);
+  color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', 'Fira Sans', Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  background: #181d2a;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.profilePhoto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #304263;
+  margin-bottom: 1rem;
+}
+
+.section {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem 0;
+  background: #181d2a;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #0005;
+  padding: 2rem;
+}
+
+.sectionTitle {
+  color: #3a6cf6;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.card {
+  background: #222b3a;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 1px 6px #0002;
+}
+
+.chip {
+  display: inline-block;
+  background: #304263;
+  color: #e6e6e6;
+  border-radius: 8px;
+  padding: 0.2rem 0.8rem;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  font-size: 0.95rem;
+} 
