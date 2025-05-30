@@ -34,7 +34,7 @@ function App() {
       </header>
 
       <section className={`${styles.section} ${styles.experienceSection}`}>
-        <h2 className={styles.sectionTitle}>Professional Experience</h2>
+        <h2 className={styles.sectionTitle}>Experience</h2>
         {experienceItems.map((item, index) => (
           <div key={index} className={styles.card}>
             <h3>{item.title} <span style={{ color: '#bfa14a' }}>@ {item.name}</span></h3>

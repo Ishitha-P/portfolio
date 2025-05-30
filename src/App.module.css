@@ -1,6 +1,6 @@
 .appContainer {
   min-height: 100vh;
-  background: linear-gradient(135deg, #181c24 0%, #232a36 100%);
+  background: linear-gradient(135deg, #162447 0%, #1f4068 100%);
   color: #f5f5f7;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,6 @@
 
 .header {
   width: 100%;
-  background: linear-gradient(to bottom, #232a36, #181c24);
   padding: 3rem 0 2rem 0;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -26,7 +25,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(to right, #bfa14a, #6c7a89, #bfa14a);
+  background: linear-gradient(to right, #d4af37, #6c7a89, #d4af37);
 }
 
 .profilePhoto {
@@ -34,7 +33,7 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #bfa14a;
+  border: 4px solid #d4af37;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -57,7 +56,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 3rem 0;
-  background: rgba(35, 42, 54, 0.92);
+  background: rgba(31, 64, 104, 0.92);
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   padding: 3rem;
@@ -66,7 +65,7 @@
 }
 
 .sectionTitle {
-  color: #bfa14a;
+  color: #d4af37;
   font-size: 2.2rem;
   margin-bottom: 2rem;
   letter-spacing: 1px;
@@ -82,12 +81,12 @@
   left: 0;
   width: 60px;
   height: 4px;
-  background: linear-gradient(to right, #bfa14a, #6c7a89);
+  background: linear-gradient(to right, #d4af37, #6c7a89);
   border-radius: 2px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -99,12 +98,12 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.10);
 }
 
 .chip {
   display: inline-block;
-  background: linear-gradient(135deg, #bfa14a, #6c7a89);
+  background: linear-gradient(135deg, #d4af37, #6c7a89);
   color: #232a36;
   border-radius: 12px;
   padding: 0.5rem 1.4rem;
@@ -117,7 +116,7 @@
 .chip:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #6c7a89, #bfa14a);
+  background: linear-gradient(135deg, #6c7a89, #d4af37);
 }
 
 /* Experience section specific styles */
