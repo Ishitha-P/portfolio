@@ -104,6 +104,9 @@ function App() {
                   const iconMap: Record<string, string> = {
                     python: '🐍',
                     c: '🔣',
+                    typescript: '🟦',
+                    html: '🟧',
+                    css: '🎨',
                     database: '🗄️',
                     terminal: '💻',
                     git: '🔧',
@@ -171,7 +174,7 @@ function App() {
               Telugu: '🇮🇳',
             };
             return (
-              <div key={lang.name} className={styles.tile}>
+              <div key={lang.name} className={styles.languageTile}>
                 <div className={styles.tileIcon}>{langIconMap[lang.name] || '🌐'}</div>
                 <div className={styles.tileName}>{lang.name}</div>
                 <div style={{ fontSize: '0.92rem', color: '#bbb', textAlign: 'center', marginTop: 2 }}>{lang.level}</div>

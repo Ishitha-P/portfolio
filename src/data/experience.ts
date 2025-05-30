@@ -58,8 +58,7 @@ export const experience = [
     techStack: '',
     summaryPoints: [
       'Electromobility | GPA: 1.6 (DE)',
-      'Machine Learning for Time Series, Explainable Machine Learning, Data Science',
-      'AI-driven Modelling and Data Analysis, AI and Digitalisation in Healthcare'
+      'Machine Learning for Time Series, Explainable Machine Learning, Data Science, AI-driven Modelling and Data Analysis, AI and Digitalisation in Healthcare',
     ],
     dateRange: '10.2022 -- 02.2025',
   },
@@ -69,7 +68,7 @@ export const experience = [
     title: 'Bachelor in Mechanical Engineering',
     techStack: '',
     summaryPoints: [
-      'GPA: 1.7 (DE)',
+      'Top 5% in batch | GPA: 1.7 (DE)',
       'Automation & Robotics, Exploratory Data Analysis, Operations Research'
     ],
     dateRange: '07.2017 -- 07.2021',
