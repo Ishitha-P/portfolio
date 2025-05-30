@@ -3,11 +3,12 @@ export const experience = [
     name: 'Schaeffler Hub for Advanced Research at KIT',
     type: 'work',
     title: 'Machine Learning Researcher',
-    techStack: 'Python, C++, PyTorch, ROS 2, Docker, AWS, Kubernetes',
+    techStack: 'Python, C/C++, PyTorch, ROS 2, CMake, Docker, Linux, Shell, Git, Bash, Cursor AI',
     summaryPoints: [
       'Master Thesis: Spatial-temporal Synchronization of Distributed Sensor Data for Deep Learning-based Road Condition Prediction',
       'Led end-to-end development of a sensor fusion framework using ROS 2 (Python, C++), synchronizing sensor data for real-time prediction achieving 91% accuracy.',
       'Optimized deep learning models via transfer learning and deployed them on embedded hardware, achieving <10 ms inference latency.',
+      'Containerized best preforming model with Docker image in Harbor registry for scalable inference on embedded application.',
       'Collaborated with cross-functional teams to integrate AI modules into autonomous systems, enhancing adaptability in dynamic environments.'
     ],
     dateRange: '05.2024 -- 02.2025',
@@ -16,11 +17,12 @@ export const experience = [
     name: 'Schaeffler Hub for Advanced Research at KIT',
     type: 'work',
     title: 'Machine Learning Intern',
-    techStack: 'Python, TensorRT, CUDA, ONNX, GitLab CI/CD',
+    techStack: 'Python, TensorRT, CUDA, ONNX, Shell, OpenCV, CUDA, TensorRT, ONNX, GitLab CI/CD, Cursor AI',
     summaryPoints: [
       'Project Thesis: Enhancing Inference Efficiency of Deep Learning Models',
-      'Accelerated real-time inference for robotic perception tasks to 187 FPS using TensorRT and CUDA optimization, cutting latency by 99.98%.',
-      'Reduced memory consumption by 50% through precision tuning, layer-wise profiling, and targeted optimization of deep learning models.'
+      'Developed a real-time inference pipeline for perception tasks achieving 187 FPS using TensorRT and CUDA optimization, cutting latency by 99.98%.',
+      'Reduced memory consumption by 50% through precision tuning, layer-wise profiling, and targeted optimization of deep learning models.',
+      'Developed custom Python scripts for test deployment and CI workflows, containerized builds using GitLab CI/CD and Docker on Linux systems.',
     ],
     dateRange: '02.2024 -- 04.2024',
   },
@@ -28,7 +30,7 @@ export const experience = [
     name: 'Schaeffler AG',
     type: 'work',
     title: 'R&D E-Mobility Systems Intern',
-    techStack: 'Python, Scikit-Learn, Pandas, PowerBI, GitLab CI/CD, Time Series Analysis',
+    techStack: 'Python, Tensorflow, Scikit-Learn, Pandas, PowerBI, GitLab CI/CD, Time Series Analysis',
     summaryPoints: [
       'Prototyped anomaly detection model using tabular sensor data for predictive maintenance reducing false positives by 18%.',
       'Applied hypothesis testing (p < 0.05) to confirm the model\'s efficacy, ensuring the reduction in false positives was statistically significant and not random.',
@@ -41,9 +43,10 @@ export const experience = [
     name: 'Stellantis',
     type: 'work',
     title: 'Machine Learning Engineer',
-    techStack: 'Python, Docker, Jenkins, Cloud Deployment',
+    techStack: 'Python, Docker, Jenkins, AWS, Cloud Deployment, Shell, Git, Bash, VS Code',
     summaryPoints: [
-      'Deployed a real-time fault detection system across 500+ vehicles, achieving 95% prediction accuracy.',
+      'Implemented a CAN based fault detection system for 500+ vehicles with 95% prediction accuracy.',
+      'Troubleshot embedded Linux system bottlenecks and applied memory/performance optimizations in model deployment pipelines.',
       'Built CI/CD pipelines with Docker and Jenkins for scalable cloud deployment, mentoring junior engineers on best practices.'
     ],
     dateRange: '09.2021 -- 09.2022',
