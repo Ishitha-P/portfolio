@@ -1,6 +1,6 @@
 # Ishitha Padmaraju Portfolio
 
-A personal portfolio website for Ishitha Padmaraju, AI Engineer, built with React and TypeScript. The site features a modern black and dark blue theme and showcases skills, experience, projects, and contact information.
+A personal portfolio website for Ishitha Padmaraju, AI Engineer, built with React and TypeScript. The site features skills, experience, projects, and contact information.
 
 ## Tech Stack
 - React

@@ -37,7 +37,7 @@ function App() {
         <h2 className={styles.sectionTitle}>Experience</h2>
         {experienceItems.map((item, index) => (
           <div key={index} className={styles.card}>
-            <h3>{item.title} <span style={{ color: '#bfa14a' }}>@ {item.name}</span></h3>
+            <h3>{item.title} <span style={{ color: '#3a86ff' }}>@ {item.name}</span></h3>
             <div style={{ fontSize: '0.95rem', margin: '0.2rem 0 0.5rem 0', color: '#aaa' }}>{item.dateRange}</div>
             {item.techStack && <div style={{ fontSize: '0.95rem', marginBottom: 4 }}><b>Tech:</b> {item.techStack}</div>}
             <ul style={{ margin: 0, paddingLeft: 18 }}>
@@ -47,6 +47,37 @@ function App() {
             </ul>
           </div>
         ))}
+      </section>
+
+      <section className={`${styles.section} ${styles.projectsSection}`}>
+        <h2 className={styles.sectionTitle}>Projects</h2>
+        <div className={styles.projectGrid}>
+          {projects.map((project, index) => (
+            <div key={index} className={styles.projectCard}>
+              {project.image && (
+                <img src={project.image} alt={project.title} className={styles.projectImage} />
+              )}
+              <div className={styles.projectContent}>
+                <div className={styles.projectTitle}>{project.title}</div>
+                <div className={styles.projectDesc}>
+                  <ul style={{ margin: 0, paddingLeft: 18 }}>
+                    {project.description.split('. ').filter(Boolean).map((sentence, i, arr) => {
+                      const text = sentence.endsWith('.') || i === arr.length - 1 ? sentence : sentence + '.';
+                      return <li key={i}>{text}</li>;
+                    })}
+                  </ul>
+                </div>
+                <div className={styles.projectTags}>
+                  {project.techUsed && project.techUsed.split(',').map((tech, techIndex) => (
+                    <span key={techIndex} className={styles.chip}>
+                      {tech.trim()}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className={`${styles.section} ${styles.educationSection}`}>
@@ -60,29 +91,6 @@ function App() {
                 <li key={i}>{point}</li>
               ))}
             </ul>
-          </div>
-        ))}
-      </section>
-
-      <section className={`${styles.section} ${styles.projectsSection}`}>
-        <h2 className={styles.sectionTitle}>Projects</h2>
-        {projects.map((project, index) => (
-          <div key={index} className={styles.card}>
-            <h3>{project.title}</h3>
-            <ul style={{ margin: 0, paddingLeft: 18 }}>
-              {project.description.split('. ').filter(Boolean).map((sentence, i, arr) => {
-                // Add period if not last sentence and not already present
-                const text = sentence.endsWith('.') || i === arr.length - 1 ? sentence : sentence + '.';
-                return <li key={i}>{text}</li>;
-              })}
-            </ul>
-            <div>
-              {project.techUsed && project.techUsed.split(',').map((tech, techIndex) => (
-                <span key={techIndex} className={styles.chip}>
-                  {tech.trim()}
-                </span>
-              ))}
-            </div>
           </div>
         ))}
       </section>
