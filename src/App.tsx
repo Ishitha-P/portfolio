@@ -41,7 +41,7 @@ function App() {
             <p className={styles.profileSummary}>{profile.summary}</p>
           </div>
           <img
-            src={'/Photo.png'}
+            src={process.env.PUBLIC_URL + '/Photo.png'}
             alt={profile.name}
             className={styles.profilePhoto}
           />
@@ -243,7 +243,7 @@ function App() {
             {profile.location}
           </div>
           <div className={styles.contactItem}>
-            <a href="/projects/Resume.pdf" className={styles.button} download>Download Resume</a>
+            <a href={process.env.PUBLIC_URL + "/projects/Resume.pdf"} className={styles.button} download>Download Resume</a>
           </div>
         </div>
       </section>
