@@ -53,8 +53,8 @@ function App() {
         {experienceItems.map((item, index) => (
           <div key={index} className={styles.card}>
             <h3>{item.title} <span style={{ color: '#3a86ff' }}>@ {item.name}</span></h3>
-            <div style={{ fontSize: '0.95rem', margin: '0.2rem 0 0.5rem 0', color: '#aaa' }}>{item.dateRange}</div>
-            {item.techStack && <div style={{ fontSize: '0.95rem', marginBottom: 4 }}><b>Tech:</b> {item.techStack}</div>}
+            <div style={{ fontSize: '1.05rem', margin: '0. 0 0.2rem 0', color: '#aaa' }}>{item.dateRange}</div>
+            {item.techStack && <div style={{ fontSize: '1.05rem', margin: '1.0rem 0 1.0rem 0' }}><b>Tech:</b> {item.techStack}</div>}
             <ul style={{ margin: 0, paddingLeft: 18 }}>
               {item.summaryPoints.map((point, i) => (
                 <li key={i}>{point}</li>
@@ -118,7 +118,7 @@ function App() {
             acc[skill.category].push(skill);
             return acc;
           }, {} as Record<string, typeof skills>)).map(([category, skillsInCategory], idx) => (
-            <div key={category} style={{ marginBottom: '2.2rem' }}>
+            <div key={category} style={{ marginBottom: '1.0rem' }}>
               <div style={{ fontWeight: 600, fontSize: '1.2rem', marginBottom: 12 }}>
                 {category}
               </div>
@@ -187,8 +187,8 @@ function App() {
       </section>
 
       <section className={styles.section} id="languages">
-        <div className={styles.sectionTitle}>Languages</div>
-        <div className={styles.tileGrid}>
+        <h2 className={styles.sectionTitle}>Languages</h2>
+        <div className={styles.tileGrid} style={{ marginBottom: '1.0rem' }}>
           {languages.map((lang, idx) => {
             const langIconMap: Record<string, string> = {
               English: '🇬🇧',
@@ -208,8 +208,8 @@ function App() {
       </section>
 
       <section className={styles.section} id="hobbies">
-        <div className={styles.sectionTitle}>Hobbies</div>
-        <div className={styles.tileGrid}>
+        <h2 className={styles.sectionTitle}>Hobbies</h2>
+        <div className={styles.tileGrid} style={{ marginBottom: '1.0rem' }}>
           {hobbies.map((hobby, idx) => {
             const hobbyIconMap: Record<string, string> = {
               'Yoga and meditation': '🧘',
