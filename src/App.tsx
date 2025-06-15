@@ -19,8 +19,8 @@ function App() {
         <ul className={styles.navLinks}>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#languages">Languages</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
@@ -47,22 +47,6 @@ function App() {
           />
         </div>
       </header>
-
-      <section className={`${styles.section} ${styles.experienceSection}`} id="experience">
-        <h2 className={styles.sectionTitle}>Experience</h2>
-        {experienceItems.map((item, index) => (
-          <div key={index} className={styles.card}>
-            <h3>{item.title} <span style={{ color: '#3a86ff' }}>@ {item.name}</span></h3>
-            <div style={{ fontSize: '1.05rem', margin: '0. 0 0.2rem 0', color: '#aaa' }}>{item.dateRange}</div>
-            {item.techStack && <div style={{ fontSize: '1.05rem', margin: '1.0rem 0 1.0rem 0' }}><b>Tech:</b> {item.techStack}</div>}
-            <ul style={{ margin: 0, paddingLeft: 18 }}>
-              {item.summaryPoints.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
 
       <section className={`${styles.section} ${styles.projectsSection}`} id="projects">
         <h2 className={styles.sectionTitle}>Projects</h2>
@@ -95,6 +79,22 @@ function App() {
         </div>
       </section>
 
+      <section className={`${styles.section} ${styles.experienceSection}`} id="experience">
+        <h2 className={styles.sectionTitle}>Experience</h2>
+        {experienceItems.map((item, index) => (
+          <div key={index} className={styles.card}>
+            <h3>{item.title} <span style={{ color: '#3a86ff' }}>@ {item.name}</span></h3>
+            <div style={{ fontSize: '1.05rem', margin: '0. 0 0.2rem 0', color: '#aaa' }}>{item.dateRange}</div>
+            {item.techStack && <div style={{ fontSize: '1.05rem', margin: '1.0rem 0 1.0rem 0' }}><b>Tech:</b> {item.techStack}</div>}
+            <ul style={{ margin: 0, paddingLeft: 18 }}>
+              {item.summaryPoints.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+      
       <section className={`${styles.section} ${styles.educationSection}`} id="education">
         <h2 className={styles.sectionTitle}>Education</h2>
         {educationItems.map((item, index) => (
