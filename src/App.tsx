@@ -6,6 +6,7 @@ import { experience } from './data/experience';
 import { projects } from './data/projects';
 import { languages } from './data/languages';
 import { hobbies } from './data/hobbies';
+import { commits } from './data/commits';
 
 function App() {
   const experienceItems = experience.filter(item => item.type === 'work');
@@ -24,6 +25,7 @@ function App() {
           <li><a href="#education">Education</a></li>
           <li><a href="#languages">Languages</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#commits">Commits</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -224,6 +226,28 @@ function App() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className={styles.section} id="commits">
+        <h2 className={styles.sectionTitle}>Commits</h2>
+        <div className={styles.commitList}>
+          {commits.map((commit) => (
+            <a
+              key={commit.sha}
+              href={commit.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.commitRow}
+            >
+              <span className={styles.commitMessage}>{commit.message}</span>
+              <span className={styles.commitMeta}>
+                <span className={styles.commitAuthor}>{commit.author}</span>
+                <span className={styles.commitDate}>{commit.date}</span>
+                <span className={styles.commitSha}>{commit.sha.slice(0, 7)}</span>
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 
