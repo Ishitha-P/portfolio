@@ -4,3 +4,5 @@ dist/
 .env
 .DS_Store
 npm-debug.log 
+public/Photo.png
+public/Formal-photo.png
