@@ -27,7 +27,7 @@ export const experience = [
   {
     name: 'Schaeffler AG',
     type: 'work',
-    title: 'R&D E-Mobility Systems (Working Student)',
+    title: 'R&D E-Mobility Systems Intern',
     techStack: 'Python, TensorFlow, Scikit-Learn, Pandas, PowerBI, GitLab CI/CD',
     summaryPoints: [
       'Developed an anomaly detection model on tabular sensor data for predictive maintenance of e-mobility drivetrains, reducing false-positive alerts by 18 %.',
